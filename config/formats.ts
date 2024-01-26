@@ -18,7 +18,7 @@ The column value will be ignored for repeat sections.
 */
 
 export const Formats: FormatList = [
-
+/*
 	// S/V Singles
 	///////////////////////////////////////////////////////////////////
 
@@ -5073,4 +5073,5 @@ export const Formats: FormatList = [
 		battle: {trunc: Math.trunc},
 		ruleset: ['HP Percentage Mod', 'Cancel Mod', 'Desync Clause Mod', 'Max Team Size = 24', 'Max Move Count = 24', 'Max Level = 9999', 'Default Level = 100'],
 	},
+*/
 ];
