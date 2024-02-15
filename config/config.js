@@ -1,5 +1,7 @@
 'use strict';
 
+const fs = require('fs');
+
 /**
  * The server port - the port to run Pokemon Showdown under
  *
@@ -64,8 +66,8 @@ exports.wsdeflate = {
 exports.ssl = {
 	port: 443,
 	options: {
-		key: './config/ssl/privkey.pem',
-		cert: './config/ssl/fullchain.pem',
+		key: fs.readFileSync('./config/ssl/privkey.pem'),
+		cert: fs.readFileSync('./config/ssl/fullchain.pem'),
 	},
 };
 
