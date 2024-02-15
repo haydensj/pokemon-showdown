@@ -66,8 +66,8 @@ exports.wsdeflate = {
 exports.ssl = {
 	port: 443,
 	options: {
-		key: fs.readFileSync('./config/ssl/privkey.pem'),
-		cert: fs.readFileSync('./config/ssl/fullchain.pem'),
+		key: fs.readFileSync('~/Repos/pokemon-showdown/config/ssl/privkey.pem'),
+		cert: fs.readFileSync('~/Repos/pokemon-showdown/config/ssl/fullchain.pem'),
 	},
 };
 
