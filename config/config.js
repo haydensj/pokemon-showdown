@@ -64,7 +64,7 @@ exports.wsdeflate = {
  * @type {{port: number, options: {key: string, cert: string}} | null}
  */
 exports.ssl = {
-	port: 443,
+	port: 31000,
 	options: {
 		key: fs.readFileSync('/etc/showdown/config/ssl/privkey.pem'),
 		cert: fs.readFileSync('/etc/showdown/config/ssl/fullchain.pem'),
