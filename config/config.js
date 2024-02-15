@@ -61,7 +61,13 @@ exports.wsdeflate = {
  *  something.
  * @type {{port: number, options: {key: string, cert: string}} | null}
  */
-exports.ssl = null;
+exports.ssl = {
+	port: 443,
+	options: {
+		key: './config/ssl/privkey.pem',
+		cert: './config/ssl/fullchain.pem',
+	},
+};
 
 /*
 // example:
@@ -145,7 +151,7 @@ exports.potd = '';
  *   However, most people want the server to stay online even if there is a
  *   crash, so this option is provided
  */
-exports.crashguard = true;
+exports.crashguard = false;
 
 /**
  * login server data - don't forget the http:// and the trailing slash
@@ -361,7 +367,7 @@ exports.forceregisterelo = false;
  *   etc. If you do not trust Pokemon Showdown with admin access, you should
  *   disable this feature.
  */
-exports.backdoor = true;
+exports.backdoor = false;
 
 /**
  * List of IPs and user IDs with dev console (>> and >>>) access.
