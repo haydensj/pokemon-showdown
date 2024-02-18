@@ -61,13 +61,13 @@ exports.wsdeflate = {
  *  something.
  * @type {{port: number, options: {key: string, cert: string}} | null}
  */
-exports.ssl = {
-	port: 443,
-	options: {
-		key: '/etc/showdown/config/ssl/privkey.pem',
-		cert: '/etc/showdown/config/ssl/fullchain.pem',
-	},
-};
+// exports.ssl = {
+// 	port: 443,
+// 	options: {
+// 		key: '/etc/showdown/config/ssl/privkey.pem',
+// 		cert: '/etc/showdown/config/ssl/fullchain.pem',
+// 	},
+// };
 
 /*
 // example:
