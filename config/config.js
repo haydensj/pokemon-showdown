@@ -7,7 +7,7 @@ const fs = require('fs');
  *
  * @type {number}
  */
-exports.port = null;
+exports.port = 31000;
 
 /**
  * The server address - the address at which Pokemon Showdown should be hosting
@@ -64,7 +64,7 @@ exports.wsdeflate = {
  * @type {{port: number, options: {key: string, cert: string}} | null}
  */
 exports.ssl = {
-	port: 31000,
+	port: 443,
 	options: {
 		key: fs.readFileSync('/etc/showdown/config/ssl/privkey.pem'),
 		cert: fs.readFileSync('/etc/showdown/config/ssl/fullchain.pem'),
